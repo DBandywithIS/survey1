@@ -8,11 +8,11 @@
         <p id="description">short explination</p>
         <form action="mailto:DBandywithIS@gmail.com" id="survey-form">
         form goes here<br>
-        <label for="name">Name:</label><br>               
+        <label for="name" id="name-label">Name:</label><br>               
         <input id="name" type="text" placeholder="Enter Name Here" required><br><br>
-        <label for="email">E-mail:</label><br>
+        <label for="email" id="email-label">E-mail:</label><br>
         <input id="email" type="email" placeholder="Enter E-mail here" required><br><br>
-        <label for="number">Number:</label><br>
+        <label for="number" id="number-label">Number:</label><br>
         <input id="number" type="number" placeholder="Enter Number Here" min="1" max="99"><br><br>
         <label for="dropdown">Player Name</label><br>
         <select id="dropdown">
@@ -25,26 +25,44 @@
             <option value="Jimmy Howard">Jimmy Howard</option>
             <option value="Tomas Holmstrom">Tomas Holmstrom</option>
         </select><br><br>
-        Reason for Nomination<br>
-        <input id="regular" type="radio" name="Reason">
+        <label for="reason">Reason for Nomination</label><br>
+        <input id="regular" type="radio" value="regular" name="Reason">
         <label for="regular">Regular Season Performance</label><br>
-        <input id="playoff" type="radio" name="Reason">
+        <input id="playoff" type="radio" value="playoff" name="Reason">
         <label for="playoff">Playoff Performance</label><br>
-        <input id="both" type="radio" name="Reason">
+        <input id="both" type="radio" value="both" name="Reason">
         <label for="both">Overall Performance</label><br>
-        <input id="longevity" type="radio" name="Reason">
+        <input id="longevity" type="radio" value="longevity" name="Reason">
         <label for="longevity">Longevity</label><br>
-        <input id="statistics" type="radio" name="Reason">
+        <input id="statistics" type="radio" value="statistics" name="Reason">
         <label for="statistics">Statistics</label><br>
-        <input id="fan-favorite" type="radio" name="Reason">
+        <input id="fan-favorite" type="radio" value="fan-favorite" name="Reason">
         <label for="fan-favorite">Fan Favorite</label><br>
-        <input id="physical" type="radio" name="Reason">
+        <input id="physical" type="radio" value="physical" name="Reason">
         <label for="physical">Physical Play</label><br>
-        <input id="dedication" type="radio" name="Reason">
-        <label for="dedication">Dedication to the Red Wings</label><br>
-        
+        <input id="dedication" type="radio" value="dedication" name="Reason">
+        <label for="dedication">Dedication to the Red Wings</label><br><br>
+        <label for="excelled">This player excelled at:</label><br>
+        <input id="offense" type="checkbox" name="excelled" value="offense">
+        <label for="offense">Offense</label><br>
+        <input id="defense" type="checkbox" name="excelled" value="defense">
+        <label for="defense">Defense</label><br>
+        <input id="goaltending" type="checkbox" name="excelled" value="goaltending">
+        <label for="goaltending">Goaltending</label><br>
+        <input id="power-play" type="checkbox" name="excelled" value="power-play">
+        <label for="power-play">Power Play</label><br>
+        <input id="penalty-kill" type="checkbox" name="excelled" value="penalty-kill">
+        <label for="penalty-kill">Penalty Kill</label><br>
+        <input id="fighting" type="checkbox" name="excelled" value="fighting">
+        <label for="fighting">Fighting</label><br>
+        <input id="clutch" type="checkbox" name="excelled" value="clutch">
+        <label for="clutch">Clutch Play</label><br>
+        <input id="intangables" type="checkbox" name="excelled" value="intangables">
+        <label for="intangables">Intangables</label><br><br>
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" placeholder="Add Any Additional Comments Here" rows="6" cols="50"></textarea><br><br>
+        <button id="submit" type="submit">Nominate Player</button>
 
-        
         </form>
     </body>
 </html>
